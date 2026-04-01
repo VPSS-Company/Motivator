@@ -88,3 +88,14 @@
         align:center
         justify-content:center
 }
+.container {
+    margin: auto 0; /* MAGIC: Pushes top and bottom away, centering the box */
+}
+
+footer {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    color: #5d6d7e;
+    font-size: 0.9rem;
+}
