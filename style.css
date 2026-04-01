@@ -1,0 +1,85 @@
+        /* Calming Animated Background */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            overflow: hidden;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Glassmorphism Container */
+        .container {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 3rem 2rem;
+            border-radius: 25px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 550px;
+            width: 85%;
+        }
+
+        #quote-text {
+            color: #2c3e50;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 1.4;
+            margin-bottom: 1.5rem;
+            min-height: 80px;
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        #quote-author {
+            color: #5d6d7e;
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 2.5rem;
+        }
+
+        button {
+            background: #ffffff;
+            color: #34495e;
+            border: none;
+            padding: 14px 35px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            background: #f8f9fa;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        /* Error message style */
+        .error-msg {
+            font-size: 0.9rem;
+            color: #c0392b;
+            margin-top: 10px;
+        }
