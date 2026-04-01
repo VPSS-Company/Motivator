@@ -11,7 +11,10 @@
             background-size: 400% 400%;
             animation: gradientBG 15s ease infinite;
             overflow: hidden;
-        }
+    min-height: 100vh; /* Takes up full screen height */
+      flex-direction: column; /* Stacks items vertically */
+    align-items: center;    /* Centers items horizontally */
+           }
 
         @keyframes gradientBG {
             0% { background-position: 0% 50%; }
